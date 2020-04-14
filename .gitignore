@@ -2,6 +2,15 @@
 # Created by https://www.gitignore.io/api/linux,macos,windows,composer,phpstorm
 # Edit at https://www.gitignore.io/?templates=linux,macos,windows,composer,phpstorm
 
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+
+
 ### Composer ###
 composer.phar
 /src/vendor/

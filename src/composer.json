@@ -6,5 +6,8 @@
         "doctrine/dbal": "^2.10",
         "leocavalcante/siler": "^1.7",
         "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {"IdeaFree\\": "classes/"}
     }
 }

@@ -25,4 +25,29 @@ class Tools
         var_dump($element);
         echo "</pre>";
     }
+
+    public function success(string $message, array $result = array()):void
+    {
+        header("Content-type: application/json; charset=utf-8");
+        
+        http_response_code(200);
+
+        echo json_encode(array(
+            'status'=> true,
+            'message'=> $message,
+            'result'=>$result
+        ));
+    }
+
+    public function error(int $errorNumber, string $message):void
+    {
+        header("Content-type: application/json; charset=utf-8");
+
+        http_response_code($errorNumber);
+
+        echo json_encode(array(
+            'status'=> false,
+            'message'=> $message
+        ));
+    }
 }

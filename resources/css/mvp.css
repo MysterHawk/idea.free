@@ -240,11 +240,6 @@ pre samp {
     padding: 1rem;
 }
 
-small {
-    color: var(--color-text-secondary);
-    background-color: var(--color-bg-window);
-}
-
 sup {
     background-color: var(--color-secondary);
     border-radius: var(--border-radius);
